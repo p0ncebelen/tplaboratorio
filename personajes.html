@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Hannah Montana</title>
+    <link rel="icon" type="image/png" href="imagenes/R (1).png" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <nav clas="navv">
+        <ul class="lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="renenas.html">Reseñas</a></li>
+          <li><a href="contacto.html#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="hamburger" class="menu"></div>
+
+    <div id="menu-abierto" class="menu-abierto oculto">
+      <div class="divlista">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="renenas.html">Reseñas</a></li>
+          <li><a href="contacto.html#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="personajes">
+      <h1>Personajes</h1>
+
+      <div class="personajes-container">
+        <div class="p-item">
+          <img class="img-item" src="imagenes/milijpg.jpg" alt="" />
+          <h5>Hannah Montana/Miley Stewart</h5>
+          <p>
+            Miley lleva una doble vida como una adolescente normal y la famosa
+            estrella pop Hannah Montana. Con la ayuda de una peluca rubia,
+            mantiene su identidad secreta.
+          </p>
+        </div>
+
+        <div class="p-item">
+          <img class="img-item" src="imagenes/lili.jpg" alt="" />
+          <h5>Lilly Truscott</h5>
+          <p>
+            Lilly es la mejor amiga de Miley y una de las pocas personas que
+            conoce su secreto. Es leal, divertida y a menudo se disfraza para
+            acompañar a Hannah Montana.
+          </p>
+        </div>
+
+        <div class="p-item">
+          <img class="img-item" src="imagenes/billy.jpg" alt="" />
+          <h5>Robby Ray Stewart</h5>
+          <p>
+            Robby es el padre de Miley y Jackson, y también es el mánager de
+            Hannah Montana. Es un padre cariñoso y protector, además de ser un
+            antiguo cantante de country que ayuda a Miley a manejar su carrera
+            musical.
+          </p>
+        </div>
+
+        <div class="p-item">
+          <img class="img-item" src="imagenes/jason.jpg" alt="" />
+          <h5>Jackson Stewart</h5>
+          <p>
+            Jackson es el hermano mayor de Miley, conocido por su personalidad
+            cómica y perezosa. Trabaja en la tienda de su padre y a menudo se
+            mete en situaciones divertidas y problemáticas.
+          </p>
+        </div>
+
+        <div class="p-item">
+          <img class="img-item" src="imagenes/oliver.jpg" alt="" />
+          <h5>Oliver Oken</h5>
+          <p>
+            Oliver es otro de los mejores amigos de Miley y también conoce su
+            secreto. Inicialmente, está obsesionado con Hannah Montana, pero
+            luego son BFF.
+          </p>
+        </div>
+
+        <div class="p-item">
+          <img class="img-item" src="imagenes/rico.jpg" alt="" />
+          <h5>Rico Suave</h5>
+          <p>
+            Rico es el joven jefe de Jackson en la tienda donde trabajan. Es un
+            niño prodigio con una actitud de sabelotodo y a menudo crea
+            situaciones cómicas.
+          </p>
+        </div>
+
+        <div class="p-item">
+          <img class="img-item" src="imagenes/jake.jpg" alt="" />
+          <h5>Jake Ryan</h5>
+          <p>
+            Jake Ryan es una estrella de cine adolescente y uno de los intereses
+            amorosos de Miley. Su relación con Miley es complicada debido a la
+            vida que lleva.
+          </p>
+        </div>
+
+        <div class="p-item">
+          <img class="img-item" src="imagenes/drew.jpg" alt="" />
+          <h5>Jesse</h5>
+          <p>
+            Jesse es un músico que trabaja con Hannah Montana y se convierte en
+            uno de sus intereses amorosos. Su relación con Miley enfrenta varios
+            desafíos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="https://www.disneyplus.com/" target="”_blank”">
+        <img class="logodisney" src="imagenes/R (2).png" alt="" />
+      </a>
+      <p>© Creado por E. Belen Ponce - 2024</p>
+    </footer>
+
+    <script>
+      // Selecciona el menu por su id
+      const hamburger = document.getElementById("hamburger");
+      const menuAbierto = document.getElementById("menu-abierto");
+
+      // Agrega un manejador de eventos de clic
+      hamburger.addEventListener("click", () => {
+        menuAbierto.classList.toggle("oculto");
+      });
+    </script>
+  </body>
+</html>
