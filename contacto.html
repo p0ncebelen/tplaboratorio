@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Hannah Montana</title>
+    <link rel="icon" type="image/png" href="imagenes/R (1).png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <nav clas="navv">
+        <ul class="lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="galeria.html">galería</a></li>
+          <li><a href="resenas.html">Reseñas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="hamburger" class="menu"></div>
+
+    <div id="menu-abierto" class="menu-abierto oculto">
+      <div class="divlista">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="galeria.html">galería</a></li>
+          <li><a href="resenas.html">Reseñas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--CONTACTO-->
+    <div class="container-total">
+      <div class="contacto-container">
+        <div class="box-info">
+          <!--  <h2>contactate con nosotros</h2> -->
+          <img src="imagenes/R (1).png" alt="" />
+          <h1>contáctate con nosotros</h1>
+        </div>
+        <form action="">
+          <div class="input-box">
+            <input type="text" required placeholder="Nombre y Apellido" />
+          </div>
+
+          <div class="input-box">
+            <input type="email" required placeholder="Correo electronico" />
+          </div>
+
+          <div class="input-box">
+            <input type="text" required placeholder="Asunto" />
+          </div>
+
+          <div class="input-box">
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Escribe un mensaje"
+            ></textarea>
+          </div>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Selecciona el menu por su id
+      const hamburger = document.getElementById("hamburger");
+      const menuAbierto = document.getElementById("menu-abierto");
+
+      // Agrega un manejador de eventos de clic
+      hamburger.addEventListener("click", () => {
+        menuAbierto.classList.toggle("oculto");
+      });
+    </script>
+  </body>
+  <footer class="footer">
+    <a href="https://www.disneyplus.com/" target="”_blank”">
+      <img class="logodisney" src="imagenes/R (2).png" alt="" />
+    </a>
+    <p>© Creado por E. Belen Ponce - 2024</p>
+  </footer>
+</html>

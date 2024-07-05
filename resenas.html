@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Hannah Montana</title>
+    <link rel="icon" type="image/png" href="imagenes/R (1).png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <nav clas="navv">
+        <ul class="lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="galeria.html">galería</a></li>
+          <li><a href="resenas.html">Reseñas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="hamburger" class="menu"></div>
+    <div id="menu-abierto" class="menu-abierto oculto">
+      <div class="divlista">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="galeria.html">galería</a></li>
+          <li><a href="resenas.html">Reseñas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="resenas-container-divs">
+      <h1>Reseñas</h1>
+      <div>
+        <img src="imagenes/hollywood.png" alt="" />
+        <p>
+          "Podemos ver la evolución de Miley Cyrus como actriz y cantante. La
+          serie comienza con una Miley joven y algo tímida, y termina con una
+          artista segura de sí misma. Este viaje no solo es inspirador para los
+          jóvenes espectadores, sino que también es una historia sobre crecer y
+          encontrar tu lugar en el mundo, lo cual resuena profundamente con su
+          audiencia.""
+        </p>
+      </div>
+      <div>
+        <img src="imagenes/ign.jpg" alt="" />
+        <p>
+          "Los personajes son entrañables y las situaciones, aunque a veces
+          exageradas, son divertidas y llenas de enseñanzas. La interpretación
+          de Miley Cyrus es carismática y genuina, lo que hace que tanto el
+          personaje de Miley como el de Hannah sean fáciles de querer. Sin duda,
+          Hannah Montana es una serie que brinda una gran dosis de nostalgia y
+          diversión."
+        </p>
+      </div>
+      <div>
+        <img src="imagenes/variety.jpg" alt="" />
+        <p>
+          "No solo fue una serie de televisión, sino un fenómeno cultural. La
+          trama de una chica común que vive una vida extraordinaria como
+          estrella pop resonó con muchos jóvenes, inspirándolos a seguir sus
+          sueños. La serie aborda temas importantes como la amistad, la familia
+          y la autenticidad de una manera accesible para su audiencia joven."
+        </p>
+      </div>
+      <div>
+        <img src="imagenes/media.jpg" alt="" />
+        <p>
+          "Es una serie ideal para disfrutar en familia. Su humor limpio y sus
+          valores positivos la hacen apta para todas las edades. Los padres
+          pueden apreciar las lecciones de vida, la importancia de la honestidad
+          y el apoyo familiar. Billy Ray Cyrus, quien interpreta al padre de
+          Miley, aporta una dinámica realista y cálida que refuerza los mensajes
+          familiares."
+        </p>
+      </div>
+    </section>
+
+    <script>
+      // Selecciona el menu por su id
+      const hamburger = document.getElementById("hamburger");
+      const menuAbierto = document.getElementById("menu-abierto");
+
+      // Agrega un manejador de eventos de clic
+      hamburger.addEventListener("click", () => {
+        menuAbierto.classList.toggle("oculto");
+      });
+    </script>
+  </body>
+  <footer class="footer">
+    <a href="https://www.disneyplus.com/" target="”_blank”">
+      <img class="logodisney" src="imagenes/R (2).png" alt="" />
+    </a>
+    <p>© Creado por E. Belen Ponce - 2024</p>
+  </footer>
+</html>
